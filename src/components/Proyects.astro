@@ -1,0 +1,97 @@
+---
+import GitHub from "./icons/GitHub.astro";
+import NesxJs from "./icons/NesxJs.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import React from "./icons/React.astro";
+import Link from "./icons/Link.astro";
+import Firebase from "./icons/Firebase.astro";
+import LinkButton from "./LinkButton.astro";
+
+const TAGS = {
+  NEXT: {
+    name: "Next.js",
+    class: "bg-black text-white",
+    icon: NesxJs,
+  },
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "bg-[#003159] text-white",
+    icon: Tailwind,
+  },
+  REACT: {
+    name: "React",
+    class: "bg-[#0579c1] text-white",
+    icon: React,
+  },
+  FIREBASE: {
+    name: "Firebase",
+    class: "bg-[#e37902] text-white",
+    icon: Firebase,
+  },
+};
+
+const PROJECTS = [
+  {
+    title: "Mateando Ando",
+    description:
+      "ecommerce sobre Mates, Bombillas, Termos y accesorios sobre mates.Es mi primer proyecto creado desde cero con React y Firebase.",
+    link: "https://mateando-ando.vercel.app/",
+    github: "https://github.com/Matiim/mateando_ando",
+    image: "/proyects/mateando-ando.webp",
+    tags: [TAGS.REACT, TAGS.FIREBASE],
+  },
+  {
+    title: "SVGL - A beautiful labrary with SVG logos",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum voluptates maxime est quod expedita minus, veniam quasi id voluptatum quiareiciendis",
+    link: "https://svgl.app/",
+    github: "https://github.com/pheralb/svgl",
+    image: "/proyects/svgl.webp",
+    tags: [TAGS.NEXT, TAGS.TAILWIND],
+  },
+];
+---
+
+<div
+  class="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
+>
+  {PROJECTS.map(({ title, description, link, github, image, tags }) => (
+    <div class="rounded-lg overflow-hidden ">
+      <img
+        src={image}
+        alt={title}
+        class="object-cover w-full h-50 transition hover:scale-105 duration-500 sm:h-58 md:scale-110 md:group-hover:scale-105"
+        loading="lazy"
+      />
+      <div class="pt-7">
+        <h3 class="text-xl font-semibold text-blue-500">{title}</h3>
+        <p class="text-gray-300 mt-1">{description}</p>
+        <ul class="flex flex-wrap mt-2 gap-x-2 gap-y-2">
+          {tags.map((tag) => (
+            <li>
+              <span
+                class={`inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium ${tag.class} text-gray-200 transition-all transform hover:-translate-y-1 hover:ml-1 hover:scale-105 border border-transparent dark:border-gray-800`}
+              >
+                <tag.icon class="size-4" />
+                {tag.name}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <footer class="flex items-center mt-4 gap-x-2">
+        {github && (
+          <LinkButton href={github}>
+            <GitHub class="size-6" /> Codigo
+          </LinkButton>
+        )}
+        {link && (
+          <LinkButton href={link}>
+            <Link class="size-4" />
+            Preview
+          </LinkButton>
+        )}
+      </footer>
+    </div>
+  ))}
+</div>

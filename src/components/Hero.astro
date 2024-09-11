@@ -1,0 +1,82 @@
+---
+import Badge from "../components/Badge.astro";
+import SocialPill from "./SocialPill.astro";
+import LinkedInIcon from "./icons/LinkedIn.astro";
+import GitHubIcon from "./icons/GitHub.astro";
+import MailIcon from "./icons/Mail.astro";
+import FileIcon from "./icons/File.astro";
+import Circle from "./Circle.astro";
+import LocationIcon from "./icons/Location.astro";
+---
+
+<div class="max-w-3xl">
+  <section
+    class="flex flex-col-reverse items-center justify-between gap-2 md:flex-row"
+  >
+    <div class="w-full md:w-3/7">
+      <h1 class="text-4xl font-bold tracking-tight sm:text-5xl text-white">
+        Hey, soy Matias Martinez
+      </h1>
+
+      <p
+        class="mt-4 mb-6 text-xl [&>strong]:text-blue-500 [&>strong]:font-semibold text-gray-300"
+      >
+        Lorem ipsum dolor sit amet consectetur,<strong>adipisicing elit</strong>
+        . Eum voluptates maxime est quod expedita minus,<strong
+          >veniam quasi id voluptatum quia reiciendis</strong
+        > , adipisci fugit corrupti nihil quae aliquam voluptatem voluptas! Voluptatibus.
+      </p>
+
+      <div class="flex items-center">
+        <LocationIcon />
+        <p class="text-1xl m-1">Colón Buenos Aires, Argentina</p>
+      </div>
+      <div class="flex items-center">
+        <p class="m-1"><Circle />Disponible para trabajar</p>
+      </div>
+
+      <nav class="flex gap-4 mt-8 flex-wrap">
+        <SocialPill href="https://www.linkedin.com/in/matias-martinez-02a3b0238/"
+        >
+          <LinkedInIcon class="size-4 lg:size-6" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill
+        href="https://www.linkedin.com/in/matias-martinez-02a3b0238/"
+        >
+          <GitHubIcon class="size-4 lg:size-6" />
+          Github
+        </SocialPill>
+
+        <SocialPill href="mailto:matimartinezz.927@gmail.com">
+          <MailIcon class="size-4 lg:size-6" />
+          Email
+        </SocialPill>
+
+        <SocialPill href="/Cv.pdf" download>
+            <FileIcon class="size-4 lg:size-6" />
+            CV
+        </SocialPill>
+      
+         
+        
+      </nav>
+    </div>
+
+    <div class="w-full md:w-2/5  items-center md:mb-20 md:gap-x-3">
+      <picture>
+        <source
+          srcset="/yo.webp 300w, /yo.webp 800w"
+          sizes="(max-width: 768px) 300px, 800px"
+          
+        />
+        <img
+          src="/yo.webp"
+          alt="mati foto"
+          class="profile-img rounded-full h-30 w-30 object-cover"
+          loading="lazy"
+        />
+      </picture>
+    </div>
+  </section>
+</div>
