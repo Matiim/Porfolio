@@ -1,0 +1,26 @@
+---
+import { TAGS } from "../const.js";
+
+const STACK = [
+  {
+    tags: [TAGS.HTML,TAGS.CSS,TAGS.JAVASCRIPT,TAGS.REACT,TAGS.ASTRO,TAGS.MONGODB,TAGS.MYSQL,TAGS.GIT,TAGS.TAILWIND,TAGS.FIREBASE],
+  },
+];
+---
+
+<div class="grid gap-14 xl:grid-cols-1 items-center">
+  {
+    STACK.map(({ tags }) => (
+      <ul class="flex flex-wrap items-center  py-1 mt-2 gap-x-4 gap-y-2">
+        {tags.map((tag) => (
+          <li>
+            <span>
+              <tag.icon class="size-20 px-2 py-1" /> 
+            </span>
+            <p class="text-gray-300 text-center">{tag.name}</p>
+          </li>
+        ))}
+      </ul>
+    ))
+  }
+</div>

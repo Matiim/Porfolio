@@ -2,14 +2,17 @@
 import Layout from "../layouts/Layout.astro";
 
 import About from "../components/About.astro";
-import Briefcase from "../components/icons/Briefcase.astro";
 import Code from "../components/icons/Code.astro";
+import Book from "../components/icons/Book.astro";
+import DevStack from "../components/icons/DevStack.astro";
 import Experience from "../components/Experience.astro";
 import Profile from "../components/icons/Profile.astro";
 import Proyects from "../components/Proyects.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Hero from "../components/Hero.astro";
 import TitleSection from "../components/TitleSection.astro";
+import Education from "../components/Education.astro";
+import Stack from "../components/Stack.astro";
 ---
 
 <Layout
@@ -38,6 +41,22 @@ import TitleSection from "../components/TitleSection.astro";
           Proyectos
         </TitleSection>
         <Proyects />
+      </SectionContainer>
+
+     <!--  <SectionContainer id="estudios">
+        <TitleSection>
+          <Book class="size-7" />
+          Estudios
+        </TitleSection>
+        <Education />
+      </SectionContainer> -->
+
+      <SectionContainer id="skills">
+        <TitleSection>
+          <DevStack class="size-7" />
+          Stack tecnologico
+        </TitleSection>
+        <Stack />
       </SectionContainer>
 
 
