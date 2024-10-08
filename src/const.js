@@ -10,6 +10,7 @@ import Git from "./components/icons/Git.astro";
 import Astro from "./components/icons/AstroIcon.astro";
 import MySql from "./components/icons/MySql.astro";
 import Express from "./components/icons/Express.astro";
+import GitHub from "./components/icons/GitHub.astro";
 
 
 export const TAGS = {
@@ -50,14 +51,22 @@ export const TAGS = {
     },
     MYSQL: {
       name: "MySql",
+      class: "bg-[#008CD7]",
       icon: MySql,
     },
     GIT: {
       name: "Git",
+      class: "bg-[#F14E32]",
       icon: Git,
+    },
+    GITHUB: {
+      name: "GitHub",
+      class: "bg-[#181717]",
+      icon: GitHub,
     },
     ASTRO: {
       name: "Astro",
+      class: "bg-[#FFD700]",
       icon: Astro,
     },
     TAILWIND: {
@@ -81,12 +90,12 @@ export const TAGS = {
       link: "https://mateando-ando.vercel.app/",
       github: "https://github.com/Matiim/mateando_ando",
       image: "/proyects/mateando-ando.webp",
-      tags: [TAGS.REACT, TAGS.FIREBASE],
+      tags: [TAGS.REACT,TAGS.FIREBASE],
     },
     {
       title: "Tareas-CRUD",
       description:
-        "CRUD de Tareas hecho con el framework MERN, con sistema de registro y login de usuarios completo.",
+        "CRUD de Tareas hecho con el Stack MERN, con sistema de registro y login de usuarios completo.",
       /* link: "#", */
       github: "https://github.com/Matiim/Tareas-CRUD",
       image: "/proyects/tasks-mern.webp",
