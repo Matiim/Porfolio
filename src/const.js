@@ -104,7 +104,7 @@ export const TAGS = {
     {
       title: "Juego-QUIZ",
       description:
-        "Juego QUIZ sensillo , con distintas categorias de preguntas y suma de puntos para ganar usando LocalState.",
+        "Juego QUIZ sencillo , con distintas categorias de preguntas y suma de puntos para ganar usando LocalState.",
       link: "juego-quiz-murex.vercel.app",
       github: "https://github.com/Matiim/juego-quiz",
       image: "/proyects/quiz.webp",
