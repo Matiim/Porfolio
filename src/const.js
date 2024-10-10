@@ -116,7 +116,7 @@ export const TAGS = {
         "Ecommerce de zapatillas completo con sistema de pago, panel para el administrador para poder agregar ,editar o eliminar productos , y un sistema de registro y login de usuarios completo.",
       /* link: "#", */
       github: "https://github.com/Matiim/Hype-Sneakers",
-      image: "/proyects/tasks-mern.webp",
+      image: "/proyects/hype-sneakers.webp",
       tags: [ TAGS.REACT, TAGS.MONGODB,TAGS.NODE,TAGS.EXPRESS]
     },
     
