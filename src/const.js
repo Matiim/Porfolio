@@ -86,7 +86,7 @@ export const TAGS = {
     {
       title: "Mateando Ando",
       description:
-        "ecommerce sobre Mates, Bombillas, Termos y accesorios sobre mates.Es mi primer proyecto creado desde cero con React y Firebase.",
+        "E-commerce de mates, bombillas, termos y accesorios. Este fue mi primer proyecto desarrollado desde cero, utilizando React para el frontend y Firebase para la gestión de base de datos y autenticación.",
       link: "https://mateando-ando.vercel.app/",
       github: "https://github.com/Matiim/mateando_ando",
       image: "/proyects/mateando-ando.webp",
@@ -95,16 +95,16 @@ export const TAGS = {
     {
       title: "Tareas-CRUD",
       description:
-        "CRUD de Tareas hecho con el Stack MERN, con sistema de registro y login de usuarios completo.",
-      /* link: "#", */
+        "Aplicación CRUD de Tareas desarrollada con el stack MERN (MongoDB, Express, React, Node.js), que incluye un sistema completo de registro y login de usuarios para gestionar las tareas de manera eficiente.",
+      link: "https://tareas-crud-delta.vercel.app/login",
       github: "https://github.com/Matiim/Tareas-CRUD",
       image: "/proyects/tasks-mern.webp",
-      tags: [ TAGS.REACT, TAGS.MONGODB,TAGS.NODE,TAGS.EXPRESS]
+      tags: [ TAGS.REACT,TAGS.EXPRESS,TAGS.NODE,TAGS.MONGODB]
     },
     {
       title: "Juego-QUIZ",
       description:
-        "Juego QUIZ sencillo , con distintas categorias de preguntas y suma de puntos para ganar usando LocalState.",
+        "Juego de preguntas tipo Quiz, con diferentes categorías y un sistema de puntuación basado en el estado local (LocalState) para determinar al ganador.",
       link: "juego-quiz-murex.vercel.app",
       github: "https://github.com/Matiim/juego-quiz",
       image: "/proyects/quiz.webp",
@@ -113,7 +113,7 @@ export const TAGS = {
     {
       title: "Hype-Sneakers",
       description:
-        "Ecommerce de zapatillas completo con sistema de pago, panel para el administrador para poder agregar ,editar o eliminar productos , y un sistema de registro y login de usuarios completo.",
+        "E-commerce de zapatillas, que incluye un sistema de pago, un panel de administrador para agregar, editar y eliminar productos, así como un sistema integral de registro y login de usuarios.",
       /* link: "#", */
       github: "https://github.com/Matiim/Hype-Sneakers",
       image: "/proyects/hype-sneakers.webp",
