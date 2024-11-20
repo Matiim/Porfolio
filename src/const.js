@@ -102,6 +102,15 @@ export const TAGS = {
       tags: [ TAGS.REACT,TAGS.EXPRESS,TAGS.NODE,TAGS.MONGODB]
     },
     {
+      title: "Landing-Tesla",
+      description:
+        "Landing page de la marca Tesla, donde se muestra sus nuevos modelos de automóviles y sus características.",
+      link: "https://landing-tesla-lime.vercel.app/", 
+      github: "https://github.com/Matiim/landing-tesla/tree/master",
+      image: "/proyects/landing-tesla.webp",
+      tags: [ TAGS.ASTRO, TAGS.TAILWIND,TAGS.JAVASCRIPT]
+    },
+    {
       title: "Juego-QUIZ",
       description:
         "Juego de preguntas tipo Quiz, con diferentes categorías y un sistema de puntuación basado en el estado local (LocalState) para determinar al ganador.",
@@ -109,15 +118,7 @@ export const TAGS = {
       github: "https://github.com/Matiim/juego-quiz",
       image: "/proyects/quiz.webp",
       tags: [TAGS.HTML,TAGS.CSS, TAGS.JAVASCRIPT ]
-    },
-    {
-      title: "Hype-Sneakers",
-      description:
-        "E-commerce de zapatillas, que incluye un sistema de pago, un panel de administrador para agregar, editar y eliminar productos, así como un sistema integral de registro y login de usuarios.",
-      /* link: "#", */
-      github: "https://github.com/Matiim/Hype-Sneakers",
-      image: "/proyects/hype-sneakers.webp",
-      tags: [ TAGS.REACT, TAGS.MONGODB,TAGS.NODE,TAGS.EXPRESS]
-    },
+    }
+    
     
   ];
