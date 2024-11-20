@@ -66,7 +66,7 @@ export const TAGS = {
     },
     ASTRO: {
       name: "Astro",
-      class: "bg-[#FFD700]",
+      class: "bg-[#5e3ab0]",
       icon: Astro,
     },
     TAILWIND: {
